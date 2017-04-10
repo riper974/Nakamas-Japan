@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wtO-In-3Xi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Nba-c8-sUt">
+            <objects>
+                <viewController id="CrO-J5-HgX" customClass="ViewController" customModule="Nakamas_Japan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WxX-Qg-kLZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZB0-XQ-ySc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iar-rA-3HY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E0m-a8-qF6">
+                                <rect key="frame" x="46" y="75" width="291" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="kc4-qY-fWj">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Dq5-yP-91Y" customClass="MyCollectionViewCell" customModule="Nakamas_Japan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btf-qn-NAc">
+                                                    <rect key="frame" x="3" y="15" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Btf-qn-NAc" firstAttribute="centerY" secondItem="Dq5-yP-91Y" secondAttribute="centerY" id="pvd-3e-kDx"/>
+                                            <constraint firstItem="Btf-qn-NAc" firstAttribute="centerX" secondItem="Dq5-yP-91Y" secondAttribute="centerX" id="vGg-mQ-4q7"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="myLabel" destination="Btf-qn-NAc" id="d16-e0-oCK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="CrO-J5-HgX" id="0MH-ZO-Uj4"/>
+                                    <outlet property="delegate" destination="CrO-J5-HgX" id="WLa-C8-Q9G"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dmx-IE-6ej"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sya-5e-Iju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3946.4000000000001" y="-66.11694152923539"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="nkl-aA-HCJ">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" doubleSided="YES" id="TZZ-pU-Pe5" customClass="PageViewController" customModule="Nakamas_Japan" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Nh-08-p2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4698.3999999999996" y="-66.11694152923539"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Shs-3t-jdd">
+            <objects>
+                <viewController storyboardIdentifier="View1ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CpT-Lg-Q8o" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="exD-MN-oni"/>
+                        <viewControllerLayoutGuide type="bottom" id="ARg-DK-tEc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D6Z-c9-jsU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ap-bH-U9s">
+                                <rect key="frame" x="36" y="45" width="304" height="571"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend felis sit amet diam imperdiet tincidunt. Vestibulum ac pulvinar erat, eu congue ante. In sapien dui, commodo in mauris sed, lobortis varius tortor. Nulla viverra risus purus, eu placerat massa porta vitae. Etiam malesuada felis ut eros semper, id malesuada lacus accumsan. Donec id nulla porttitor odio molestie consequat sit amet non elit. Cras tincidunt auctor efficitur. Nunc scelerisque elementum velit, sit amet venenatis augue lobortis nec. Aenean maximus porttitor ultrices. Donec non dolor urna. Duis dignissim magna eu neque ultricies, sit amet faucibus enim mattis. Mauris lacinia dignissim efficitur. Vestibulum varius magna tortor, ac commodo ex lobortis nec. Curabitur nec orci porttitor mi tincidunt varius.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMJ-GV-hnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5479.1999999999998" y="-6.746626686656672"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qpA-Qy-EXE">
+            <objects>
+                <viewController storyboardIdentifier="View2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="82o-UD-Th6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="44P-Ei-Hw2"/>
+                        <viewControllerLayoutGuide type="bottom" id="rGB-Lb-ETy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xtc-Og-LdN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sakura.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CoG-6G-XhW">
+                                <rect key="frame" x="16" y="100" width="343" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeo-VN-pcs">
+                                <rect key="frame" x="38" y="297" width="298" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend felis sit amet diam imperdiet tincidunt. Vestibulum ac pulvinar erat, eu congue ante. In sapien dui, commodo in mauris sed, lobortis varius </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXE-wf-g5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6135.1999999999998" y="-7.6461769115442282"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="kgD-Fk-xEr">
+            <objects>
+                <viewController storyboardIdentifier="View3ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D0i-g8-kws" customClass="WebViewController" customModule="Nakamas_Japan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VsJ-sT-ZYm"/>
+                        <viewControllerLayoutGuide type="bottom" id="pLo-Ge-uEb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mi6-gv-gdP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x0Q-yb-GUv">
+                                <rect key="frame" x="67" y="66" width="240" height="525"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="x0Q-yb-GUv" id="fwF-va-fCs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifY-vB-2bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6852" y="-8.5457271364317844"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mzB-qu-k88">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wtO-In-3Xi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yR1-Dq-Z0X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CrO-J5-HgX" kind="relationship" relationship="rootViewController" id="eyY-KE-iaw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wb-QF-9u4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3007.1999999999998" y="-66.11694152923539"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sakura.jpg" width="940" height="400"/>
+    </resources>
+</document>
